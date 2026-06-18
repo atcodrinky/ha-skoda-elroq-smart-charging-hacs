@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Skoda Elroq Smart Charging – Configurazione",
+        "description": "Inserisci le impostazioni principali del sistema",
+        "data": {
+          "mqtt_topic_base": "Topic base MQTT wallbox (es. prism/1)",
+          "contract_power_w": "Potenza contratto (W)",
+          "battery_capacity_kwh": "Capacità batteria veicolo (kWh)"
+        }
+      },
+      "entities": {
+        "title": "Selezione Entità",
+        "description": "Seleziona le entità Home Assistant per veicolo, wallbox e sensori energetici",
+        "data": {
+          "vehicle_soc_entity": "Sensore SOC veicolo (%)",
+          "vehicle_charge_limit_entity": "Numero limite di carica veicolo",
+          "vehicle_connected_entity": "Binary sensor cavo collegato",
+          "wallbox_state_entity": "Sensore stato wallbox",
+          "grid_power_entity": "Sensore potenza rete (W)",
+          "pv_power_entity": "Sensore produzione fotovoltaica (W)",
+          "wallbox_power_entity": "Sensore potenza wallbox (W)",
+          "wallbox_voltage_entity": "Sensore tensione wallbox (V)",
+          "tariff_band_entity": "Sensore fascia tariffaria (F1/F2/F3)"
+        }
+      }
+    },
+    "error": {
+      "entity_not_found": "Entità non trovata in Home Assistant"
+    },
+    "abort": {
+      "already_configured": "Integrazione già configurata"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opzioni",
+        "data": {
+          "contract_power_w": "Potenza contratto (W)",
+          "battery_capacity_kwh": "Capacità batteria veicolo (kWh)"
+        }
+      }
+    }
+  }
+}
